@@ -1,4 +1,4 @@
-package com.example.mcshippers.Profile.presentation.profileDetails.ui
+package com.example.mcshippers.Profile.presentation.profileLists.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,9 +7,8 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mcshippers.Profile.model.Profile
-import com.example.mcshippers.Profile.presentation.profileDetails.viewModel.ProfileListViewModelImpl
+import com.example.mcshippers.Profile.presentation.profileLists.viewModel.ProfileListViewModelImpl
 
-import com.example.mcshippers.R
 import com.example.mcshippers.base.reciever.ConnectionLiveData
 import com.example.mcshippers.databinding.ActivityProfileListBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel

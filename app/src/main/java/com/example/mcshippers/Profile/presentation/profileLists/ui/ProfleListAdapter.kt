@@ -1,4 +1,4 @@
-package com.example.mcshippers.Profile.presentation.profileDetails.ui
+package com.example.mcshippers.Profile.presentation.profileLists.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,10 +6,8 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mcshippers.Profile.model.Athlete
-import com.example.mcshippers.Profile.model.Profile
 import com.example.mcshippers.databinding.ProfileCardViewBinding
 import com.squareup.picasso.Picasso
-import java.text.FieldPosition
 
 class ProfleListAdapter(var listner: ProfileListAdapterInterface) : RecyclerView.Adapter<ProfleListAdapter.CustomViewHolder>() {
     class CustomViewHolder(var binding: ProfileCardViewBinding) :
@@ -21,7 +19,7 @@ class ProfleListAdapter(var listner: ProfileListAdapterInterface) : RecyclerView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         var binding = ProfileCardViewBinding.inflate(LayoutInflater.from(parent.context))
-        return ProfleListAdapter.CustomViewHolder(binding)
+        return CustomViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {

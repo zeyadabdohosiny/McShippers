@@ -1,4 +1,4 @@
-package com.example.mcshippers.Profile.presentation.profileDetails.viewModel
+package com.example.mcshippers.Profile.presentation.profileLists.viewModel
 
 interface ProfileListViewModel {
      fun getALlProfilesRemote()

@@ -1,7 +1,7 @@
 package com.example.mcshippers.Profile.di
 
 import com.example.mcshippers.Profile.data.*
-import com.example.mcshippers.Profile.presentation.profileDetails.viewModel.ProfileListViewModelImpl
+import com.example.mcshippers.Profile.presentation.profileLists.viewModel.ProfileListViewModelImpl
 import com.example.mcshippers.base.data.local.room.data.RoomDataBase
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
