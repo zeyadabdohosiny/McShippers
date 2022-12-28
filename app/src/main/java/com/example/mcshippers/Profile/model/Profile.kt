@@ -14,26 +14,3 @@ data class Profile(
     val athletes: List<Athlete>?
 )
 
-data class Athlete(
-    @ColumnInfo(name="brief")
-    val brief: String,
-    @ColumnInfo(name="iamge")
-    val image: String,
-    @ColumnInfo(name="name")
-    val name: String
-)
-
-class Converters {
-    @TypeConverter
-    fun fromItemsToJson(list: List<Athlete>): String {
-        return Gson().toJson(list)
-    }
-
-    @TypeConverter
-    fun fromGsonToListOfItem(value: String?): List<Athlete> {
-        val gson = Gson()
-        var listType =object: TypeToken<List<Athlete>>() {}.getType()
-        return gson.fromJson(value, listType)
-    }
-
-}
